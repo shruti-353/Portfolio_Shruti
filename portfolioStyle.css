@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#2E1A41, #7597de);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+.active {
+    background: #fff;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #2E1A41;
+}
+
+#first {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#first::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #2E1A41, transparent);
+    z-index: 1000;
+}
+
+#first img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#first img#moon {
+    mix-blend-mode: screen;
+}
+
+#first img#mountains_front {
+    z-index: 10;
+}
+
+#text {
+    position: absolute;
+    right: -350px;
+    color: #000;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2E1A41;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+
+#second {
+    position: relative;
+    padding: 80px;
+    background: linear-gradient(#2E1A41, #7597de);
+    height: 100vh;
+}
+
+#second::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(to top, #7597de, transparent);
+    z-index: 1000; */
+}
+
+#second h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#second p {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    color: #fff;
+    text-align: left;
+}
+
+#second .photo{
+    position: absolute;
+    align-items: right;
+    width: 20%;
+}
+
+#third{
+    /* min-height: 100vh; */
+    background: linear-gradient(#7597de, #1c0522);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#third h1{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+#third .card{
+    border-radius: 25px;
+    /* background-color: #fff; */
+    width: 250px;
+    height: 300px;
+    /* opacity: 0.9; */
+}
+
+#third .image-card{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+    height: 150px;
+    /* padding: 3px; */
+}
+
+#third .cardName{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.swiper mySwiper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+    background: #7597de;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000); */
+}
+
+#fourth {
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#1c0522, #7597de);
+    height: 100vh;
+}
+
+#fourth h1{
+    color: #fff;
+}
+
+#fourth::before, #fourth::after{
+    box-sizing: border-box;
+}
+
+#fourth .carousal{
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+}
+
+#fourth .carousal >ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+#fourth .slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;  
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+#fourth .slide >img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#fourth .slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0;
+}
+
+#fourth .carousal-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none; 
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0 .5rem;
+    background-color: black;
+}
+
+#fourth .carousal-button:hover, #fourth .carousal-button:focus{
+
+    color: white;
+    background-color: rgb(177, 32, 32);
+}
+
+#fourth .carousal-button:focus{
+    outline: #2E1A41;
+}
+
+#fourth .carousal-button.prev{
+    left: 1rem;
+
+}
+#fourth .carousal-button.next{
+    right: 1rem;
+}
+
+
+
+/* #fourth .carousal-item{
+    height: 32rem;
+    background: #1c0522;
+    color: #fff;
+    position: relative;
+}
+
+#fourth .contain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 100px;
+
+} */
+/* 
+#fifth {
+    position: relative;
+    padding: 100px;
+    background: linear-gradient(#1c0522, #7597de);
+    background: #1c0522;
+    height: 100vh;
+} */

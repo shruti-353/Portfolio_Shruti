@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <title>Shruti's Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#" style="--i:1" class="active" id="">Home</a></li>
+            <li><a href="#second" style="--i:2" class="" id="">About</a></li>
+            <li><a href="#third" style="--i:4" class="" id="">Skills</a></li>
+            <li><a href="#fourth" style="--i:3" class="" id="">Portfolio</a></li>
+            <!-- <li><a href="#fifth" style="--i:5" class="" id="">Contact</a></li> -->
+        </ul>
+        </nav>
+    </header>
+
+    <section id="first">
+        <img src="sky.png" id= "sky" alt="">
+        <img src="moon.png" id= "moon" alt="">
+        <img src="mountains_behind.png" id= "mountains_behind" alt="">
+        <h2 id="text" >Welcome</h2>
+        <a href="#" id="btn">Explore</a>
+        <img src="mountains_front.png" id= "mountains_front" alt="">
+    </section>
+
+    <section id ="second">
+        <div class="sec" id="sec">
+            <h2>&#8209;&#8209;About Me&#8209;&#8209;</h2>
+            <p>Hello! I am Shruti, an aspiring software engineer and a designer. I  am currently persuing my Bachelors in Technology in Computer Science and Design from Indraprastha Institute of Information Technology, Delhi.
+                My interest primarily lies in coding though I equally love and enjoy graphic designing. I have created multiple projects in the past on Coding and Designing, both individually and combined.
+                I believe these two form a perfect blend and are extremely crucial to create interactive user-friendly designs. </p>
+        </div>
+        <div class="photo">
+            <img src="Shruti2.png" alt="" class="shruti">
+        </div>
+    </section>
+    
+    <section id="third">
+        <div>
+            <h1>Skills</h1>
+        </div>
+        <div class="allSlides">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="Java.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>Java</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="python.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>Python</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="HTML.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>HTML</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="CSS.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>CSS</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="JavaScript.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="MySQL.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>MySQL</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="image-card">
+                            <img src="C++.png" alt="" class="cardImg">
+                        </div>
+                        <div class="cardName">
+                            <h2>C++</h2>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </section>
+
+    <section id="fourth">
+        <h1>Recent Projects</h1>
+        <div class="carousal">
+            <button class="carousal-button prev">&lt;</button>
+            <button class="carousal-button next">&gt;</button>
+        <ul>
+            <li class="slide">
+                <img src="slide1.png" alt="img #1">
+            </li>
+            <li class="slide">
+                <img src="slide2.png" alt="img #2">
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        let sky = document.getElementById('sky');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sky.style.left = value * 0.25+ 'px';
+            moon.style.top = value * 1.05+ 'px';
+            mountains_behind.style.top = value * 0.5+ 'px';
+            mountains_front.style.top = value * 0+ 'px';
+            text.style.marginRight = value*4 + 'px';
+            text.style.marginTop = value*1.5 + 'px';
+            btn.style.marginTop = value*1.5 + 'px';
+            header.style.top = value*0.5 + 'px';
+        })
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 40,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+        //   autoplay:{
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        //   },
+        });
+    </script>
+
+    <script>
+        const buttons = document.querySelectorAll("[data-carousel-button]")
+        buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const offset = button.dataset.carouselButton === "next" ? 1 : -1
+            const slides = button
+            .closest("[data-carousel]")
+            .querySelector("[data-slides]")
+
+            const activeSlide = slides.querySelector("[data-active]")
+            let newIndex = [...slides.children].indexOf(activeSlide) + offset
+            if (newIndex < 0) newIndex = slides.children.length - 1
+            if (newIndex >= slides.children.length) newIndex = 0
+
+            slides.children[newIndex].dataset.active = true
+            delete activeSlide.dataset.active
+        })
+        })
+    </script>
+
+    </body>
+</html>
